@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    @include('style')
+    @!section('style')
+</head>
+
+<body>
+
+    
+    @include('admin.header')
+    @include('admin.nav')
+
+
+    @!section('header') 
+    @!section('admin.nav')
+    @!section('body')
+
+
+    @include('script')
+    @!section('script')
+
+
+    @include('admin._script')
+    @!section('private_script')
+
+
+</body>
+
+</html>
